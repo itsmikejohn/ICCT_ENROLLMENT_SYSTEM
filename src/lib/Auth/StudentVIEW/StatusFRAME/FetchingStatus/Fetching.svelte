@@ -37,16 +37,16 @@
 
 
     
-    {#if $studentState.showFormReq}
-        <!--Informations-->
-        <div class="border-b-2 border-t-2 border-orange-500 py-1 mt-5">
-            <p class="bg-orange-500 text-center text-white font-bold">Student Information</p>
-        </div>
+    
+    <!--Informations-->
+    <div class="border-b-2 border-t-2 border-orange-500 py-1 mt-5">
+        <p class="bg-orange-500 text-center text-white font-bold">Student Information</p>
+    </div>
 
-        <section class="mt-2 p-2 bg-slate-800">
-            <FetchingInfo />
-        </section>
-    {/if}
+    <section class="mt-2 p-2 bg-slate-800">
+        <FetchingInfo />
+    </section>
+    
     
 
     
