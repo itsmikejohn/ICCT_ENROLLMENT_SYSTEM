@@ -60,7 +60,7 @@
                 <p class="font-mono">{post.date}</p>
             </div>
             <!--Delete handler-->
-            {#if $auth.currentUser?.uid === post.ownerUID || $adminKey}
+            {#if $auth.currentUser?.uid === post.ownerUID || $auth.currentUser?.uid === $adminKey}
                 <div class="-mt-5">
                     <button class="p-1 bg-red-500 text-white rounded-lg transition-all hover:font-semibold active:scale-95"
                     on:click={() => deleteHandler(post)}

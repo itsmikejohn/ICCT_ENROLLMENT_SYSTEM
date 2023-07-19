@@ -103,7 +103,7 @@ on:click={viewCommentHandler}
                                     <p class="font-mono">{comments.date}</p>
                                 </section>
                             </div>
-                            {#if $auth.currentUser?.uid === comments.ownerUID || $adminKey}
+                            {#if $auth.currentUser?.uid === comments.ownerUID || $auth.currentUser?.uid === $adminKey}
                                 <div class="-mt-16">
                                     <button class="p-1 bg-red-500 text-white rounded-lg transition-all hover:font-semibold active:scale-95"
                                     on:click={() => deleteHandler(comments)}
