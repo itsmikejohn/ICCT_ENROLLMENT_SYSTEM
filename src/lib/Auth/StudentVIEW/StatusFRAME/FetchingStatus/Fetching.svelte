@@ -2,13 +2,12 @@
 // @ts-nocheck
 
     import { studentState } from "$lib";
-    import FetchingImages from "./FetchingImages.svelte";
 	import FetchingInfo from "./FetchingInfo.svelte";
     import DeleteForm from "./DeleteForm.svelte";
 
     /** database calls*/
     import { auth, db, storage } from "$lib";
-    import { onSnapshot, collection, doc, getDoc} from "firebase/firestore";
+    import { onSnapshot, collection, doc} from "firebase/firestore";
 
 	
     onSnapshot(doc(collection($db, "submittedForms"), $auth.currentUser.uid), snapResp =>

@@ -259,6 +259,7 @@ export const studentState = writable({
     secondarySchoolName: "",
     secondarySchoolAddress: "",
     secondaryGraduated: "",
+    comparison: 0.1,
 
     /** Interaction states */
     showPoster: false,
