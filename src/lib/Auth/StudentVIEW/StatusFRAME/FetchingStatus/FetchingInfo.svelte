@@ -6,7 +6,7 @@
 <section>
     <p class="py-1 font-semibold text-white text-center">FormType: {$studentState.showFormReq.formType} </p>
     <p class="py-1 font-semibold text-white text-center">Date: {$studentState.showFormReq.date} </p>
-    <p class="py-1 font-semibold text-white text-center">Status: {#if $studentState.showFormReq.isAccepted} Accepted {:else} Processing {/if} </p>
+    <p class="py-1 font-semibold text-white text-center">Status: {#if $studentState.showFormReq.isAccepted} <b class="bg-green-500">Accepted</b> {:else} Processing {/if} </p>
 </section>
 
 <p class="py-1 font-semibold text-white">Fullname: </p>
