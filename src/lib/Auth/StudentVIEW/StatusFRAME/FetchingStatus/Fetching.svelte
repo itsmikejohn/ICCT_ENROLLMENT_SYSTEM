@@ -38,6 +38,8 @@
         <section class="mt-2 p-2 bg-slate-800">
             <FetchingInfo />
         </section>
+    {:else}
+        <p class="text-center mt-2">There is no records in our database.</p>
     {/if}
     
 
