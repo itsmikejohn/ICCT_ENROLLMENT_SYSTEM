@@ -56,12 +56,14 @@
         .then(voidResp => 
         {
             dsComp.loader = false;
+            $studentState.comparison = 0.1;
         })
         .catch(errorResp =>
         {
             console.log(errorResp)
             dsComp.showError  = true;
             dsComp.loader = false;
+            
         })
         
         

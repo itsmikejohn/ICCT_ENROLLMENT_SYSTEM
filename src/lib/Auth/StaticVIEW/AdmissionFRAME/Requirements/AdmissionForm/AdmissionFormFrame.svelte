@@ -27,7 +27,7 @@
     {
         onAuthStateChanged($auth, userCredResp =>
         {
-            userCredResp ? dsComp.comparison = outerIndex : dsComp.showLoginWarning = true;
+            userCredResp ? $studentState.comparison = outerIndex : dsComp.showLoginWarning = true;
         })
 
     }
@@ -45,7 +45,7 @@
     {/if}
     <DsButton color="bg-green-500" title="Submit form" on:click={viewSubmitForm}/>
     <!--Comparison to show specific form to its respected index-->
-    {#if dsComp.comparison === outerIndex}
+    {#if $studentState.comparison === outerIndex}
 
         <section class="fixed bottom-0 top-0 left-0 right-0 z-10 p-2 sm:p-0 " id="colorMe">
 
@@ -71,7 +71,7 @@
                     <!--Submitting date inside here-->
                     <SubmitFrame {require}/>
 
-                    <DsButton title="Back" on:click={() => (dsComp.comparison = 0.1, $studentState.course = "Select your course")}/>
+                    <DsButton title="Back" on:click={() => ($studentState.comparison = 0.1, $studentState.course = "Select your course")}/>
                 </section>
             </div>
 
