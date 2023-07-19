@@ -1,5 +1,5 @@
 <script>
-    import { staticState } from "$lib";
+    import { adminKey, staticState } from "$lib";
     import AuthSwitch from "$lib/Auth/AuthSwitch.svelte";
 
     /** Database calls */
@@ -18,7 +18,7 @@
         {
             if(userCredResp)
             {
-                if(userCredResp.uid === "D3yGMZhaSldgo3uo0JP66iMhdJJ3")
+                if(userCredResp.uid === $adminKey)
                 {
                     $staticState.activeItem = "DashBoard";
                     $staticState.defaultNav = $staticState.adminNav;

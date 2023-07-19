@@ -23,7 +23,7 @@ export const storage = writable(getStorage(app));
 
 
 
-
+export const adminKey = writable("D3yGMZhaSldgo3uo0JP66iMhdJJ3")
 
 export const adminState = writable({
     /** panel state */
