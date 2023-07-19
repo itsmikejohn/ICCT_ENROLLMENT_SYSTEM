@@ -11,8 +11,16 @@
 
 	
     onSnapshot(doc(collection($db, "submittedForms"), $auth.currentUser.uid), snapResp =>
-    {
-        $studentState.showFormReq = snapResp.data();
+    {   
+        let data = {}
+        if(snapResp.data()){
+            let mutatedDate = new Date(Number(JSON.stringify(snapResp.data().createdAt).slice(11,21)) * 1000);
+            let date = mutatedDate.toLocaleTimeString() + ", " + mutatedDate.toLocaleDateString(); 
+            
+            data = {...snapResp.data(), date: date}
+            
+        }
+        $studentState.showFormReq = data;
         
     })
     
@@ -32,7 +40,7 @@
         <p class="bg-orange-500 text-center text-white font-bold">Student Information</p>
     </div>
 
-    {#if $studentState.showFormReq}
+    {#if Object.keys($studentState.showFormReq).length > 0}
         <section class="mt-2 p-2 bg-slate-800">
             <FetchingInfo />
         </section>
