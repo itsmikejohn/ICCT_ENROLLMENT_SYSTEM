@@ -1,5 +1,5 @@
 <script>
-    import { studentState } from "$lib";
+    import { adminKey, studentState } from "$lib";
     import { scale } from "svelte/transition";
 
     /** database calls */
@@ -103,7 +103,7 @@ on:click={viewCommentHandler}
                                     <p class="font-mono">{comments.date}</p>
                                 </section>
                             </div>
-                            {#if $auth.currentUser?.uid === comments.ownerUID}
+                            {#if $auth.currentUser?.uid === comments.ownerUID || $adminKey}
                                 <div class="-mt-16">
                                     <button class="p-1 bg-red-500 text-white rounded-lg transition-all hover:font-semibold active:scale-95"
                                     on:click={() => deleteHandler(comments)}
