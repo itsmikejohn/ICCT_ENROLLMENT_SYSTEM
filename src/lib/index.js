@@ -26,7 +26,9 @@ export const storage = writable(getStorage(app));
 
 
 export const adminState = writable({
-
+    /** panel state */
+    /** @type {string[]} */
+    submittedForms: [],
 })
 
 export const staticState = writable({

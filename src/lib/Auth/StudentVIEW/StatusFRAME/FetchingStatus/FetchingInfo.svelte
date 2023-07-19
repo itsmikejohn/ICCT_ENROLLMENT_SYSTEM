@@ -27,8 +27,11 @@
 <p class="py-1 font-semibold text-white">Date Of birth: </p>
 <p class="px-2 py-1 bg-white">{$studentState.showFormReq.dateOfbirth}</p>
 
-<p class="py-1 font-semibold text-white">Fathers Name: </p>
+<p class="py-1 font-semibold text-white">Father's Name: </p>
 <p class="px-2 py-1 bg-white">{$studentState.showFormReq.fathersName}</p>
+
+<p class="py-1 font-semibold text-white">Mother's Name: </p>
+<p class="px-2 py-1 bg-white">{$studentState.showFormReq.mothersName}</p>
 
 <p class="py-1 font-semibold text-white">Primary School Name: </p>
 <p class="px-2 py-1 bg-white">{$studentState.showFormReq.primarySchoolName}</p>
