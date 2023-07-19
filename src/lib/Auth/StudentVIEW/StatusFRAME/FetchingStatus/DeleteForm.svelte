@@ -10,9 +10,7 @@
 
     const deleteFormHandler = () =>
     {
-        dsComp.loader = true;
         deleteDoc(doc(collection($db, "submittedForms"), $auth.currentUser?.uid))
-        dsComp.loader = false;
     }
 
     import DsButton from "$lib/GenCom/DsButton.svelte";

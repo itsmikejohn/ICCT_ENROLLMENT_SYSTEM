@@ -266,8 +266,7 @@ export const studentState = writable({
     showStudentComments: [],
 
     /** status states */
-    showImagesReq: [],
-    showFormReq: [],
+    showFormReq: {},
 
 
     

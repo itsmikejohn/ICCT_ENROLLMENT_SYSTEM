@@ -19,7 +19,7 @@
     }
     
     /** firebase submit form function 
-     * @param {any[]} studentFile @param {string} course @param {string} fullname @param {string} presentAddress @param {string} religion
+     * @param {string} course @param {string} fullname @param {string} presentAddress @param {string} religion
      * @param {string} civilStatus @param {string} mobileNumber @param {string} dateOfbirth @param {string} fathersName @param {string} mothersName
      * @param {string} primarySchoolName @param {string} primarySchoolAddress @param {string} primaryGraduated @param {string} secondarySchoolName 
      * @param {string} secondarySchoolAddress @param {string} secondaryGraduated
