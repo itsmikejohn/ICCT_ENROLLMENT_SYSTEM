@@ -2,9 +2,15 @@
 
 <script>
 // @ts-nocheck
-
+    import { slide } from "svelte/transition";
     import DsButton from "$lib/GenCom/DsButton.svelte";
-	import { slide } from "svelte/transition";
+
+    import { db } from "$lib";
+	import { updateDoc, collection, doc, deleteDoc } from "firebase/firestore";
+
+	
+
+
     /** @type {string} */
     export let forms;
 
@@ -18,7 +24,21 @@
 
     const approveHandler = () =>
     {
+        updateDoc(doc(collection($db, "submittedForms"), forms.id), {
+            isAccepted: true
+        })
+    }
 
+    const disapproveHandler = () =>
+    {
+        updateDoc(doc(collection($db, "submittedForms"), forms.id), {
+            isAccepted: false
+        })
+    }
+
+    const deleteHandler = () =>
+    {
+        deleteDoc(doc(collection($db, "submittedForms"), forms.id))
     }
 
 </script>
@@ -92,8 +112,13 @@ on:click={showMenu}
         <p class="px-2 py-1 ">{forms.secondaryGraduated}</p>
 
         <section class="flex gap-1 m-2">
-            <DsButton title="Approve" />
-            <DsButton color="bg-red-500" title="Cancel"/>
+            {#if !forms.isAccepted}
+            <DsButton title="Approve" on:click={approveHandler}/>
+            {:else}
+            <DsButton color="bg-red-500" title="Cancel" on:click={disapproveHandler}/>
+            {/if}
+
+            <DsButton color="bg-red-500" title="Delete" on:click={deleteHandler}/>
         </section>
     </nav>
 {/if}
