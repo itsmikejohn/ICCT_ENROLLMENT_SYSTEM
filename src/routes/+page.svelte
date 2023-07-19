@@ -18,7 +18,7 @@
         {
             if(userCredResp)
             {
-                if(userCredResp.uid === "Admin key")
+                if(userCredResp.uid === "D3yGMZhaSldgo3uo0JP66iMhdJJ3")
                 {
                     $staticState.activeItem = "DashBoard";
                     $staticState.defaultNav = $staticState.adminNav;

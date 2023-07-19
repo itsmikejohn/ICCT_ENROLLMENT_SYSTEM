@@ -6,8 +6,8 @@
 
     /** database calls */
     import { auth, db, storage } from "$lib";
-    import { collection, doc, serverTimestamp, setDoc} from "firebase/firestore";
-    import {uploadBytesResumable, ref} from "firebase/storage";
+    import { collection, doc, serverTimestamp, setDoc, } from "firebase/firestore";
+
 
     /** @type {any} */
     export let require;
@@ -25,7 +25,7 @@
      * @param {string} secondarySchoolAddress @param {string} secondaryGraduated
     */
     const firebaseSubmitForm = (
-        studentFile, course, 
+        course, 
         fullname, presentAddress, 
         religion, civilStatus, mobileNumber, 
         dateOfbirth, fathersName, mothersName, 
@@ -34,10 +34,9 @@
     {
         dsComp.loader = true;
         setDoc(doc(collection($db, "submittedForms"), $auth.currentUser?.uid ), {
-            isAccepted: false,
             createdAt: serverTimestamp(),
+            isAccepted: false,
             formType: require.name,
-            studentFile: [],
             course: course,
             fullname: fullname,
             presentAddress: presentAddress,
@@ -56,21 +55,11 @@
         }, {merge:true})
         .then(voidResp => 
         {
-            //this will store students uploaded files link
-            setDoc(doc(collection($db, "studentsLinks"), $auth.currentUser?.uid), {images: []},)
-            .then(voidResp =>
-            {
-                for(let i = 0; i < studentFile.length; i++)
-                {
-                    const uploadSomething = uploadBytesResumable(ref($storage, `${$auth.currentUser?.uid}/${studentFile[i].name}`), studentFile[i]);
-                   
-                }
-            })
-            
             dsComp.loader = false;
         })
         .catch(errorResp =>
         {
+            console.log(errorResp)
             dsComp.showError  = true;
             dsComp.loader = false;
         })
@@ -80,7 +69,6 @@
 
     const handleSubmit = () =>
     {
-        const studentFile = $studentState.files;
         const course = $studentState.course;
         const fullname = $studentState.fullname.bindthis;
         const presentAddress = $studentState.presentAddress.bindthis;
@@ -115,7 +103,7 @@
             secondaryGraduated.trim().length > 3
        )
        {
-            firebaseSubmitForm(studentFile, course, 
+            firebaseSubmitForm(course, 
             fullname, presentAddress, 
             religion, civilStatus, mobileNumber, 
             dateOfbirth, fathersName, mothersName, 

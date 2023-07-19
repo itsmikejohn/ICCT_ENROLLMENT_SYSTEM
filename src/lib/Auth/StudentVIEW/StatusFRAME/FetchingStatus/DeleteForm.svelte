@@ -3,7 +3,6 @@
 
     import { auth, db, storage } from "$lib";
     import { collection, deleteDoc, doc } from "firebase/firestore";
-    import { ref, deleteObject, listAll} from "firebase/storage";
 
     const dsComp = {
         loader: false,
@@ -13,20 +12,6 @@
     {
         dsComp.loader = true;
         deleteDoc(doc(collection($db, "submittedForms"), $auth.currentUser?.uid))
-        .then(voidResp =>
-        {
-            listAll(ref($storage, $auth.currentUser?.uid))
-            .then(listResp =>
-            {
-                listResp.items.forEach(item =>
-                {
-                    dsComp.loader = false;
-                    deleteObject(ref($storage, item.fullPath));
-                    $studentState.showImagesReq = [];
-                })
-            })
-            
-        })
         dsComp.loader = false;
     }
 
