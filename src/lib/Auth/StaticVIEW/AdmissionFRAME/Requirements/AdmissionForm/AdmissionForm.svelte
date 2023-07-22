@@ -8,20 +8,20 @@
 </script>
 
 <section class="flex flex-col gap-8 ">
-    <div class="py-2 flex flex-col gap-2 p-2 bg-slate-400 rounded-md mt-5">
+    <div class="py-2 flex flex-col gap-2 bg-gradient-to-l from-blue-100 to-slate-500 rounded-md p-4 mt-8">
 
-        <div class="border-b-2 border-t-2 border-orange-500 py-1">
-            <p class="bg-orange-500 px-2 text-center text-white font-bold">COURSE OFFER</p>
-        </div>
+
+        <p class="bg-gradient-to-r from-white to-orange-300 px-2 font-semibold text-center w-full  my-5">COURSE OFFER</p>
+
 
         <CourseAccordion {require}/>
     </div>
 
-    <div class="py-2 flex flex-col gap-2 bg-slate-400 rounded-md p-2">
+    <div class="py-2 flex flex-col gap-2 bg-gradient-to-l from-blue-100 to-slate-500 rounded-md p-4">
         
-        <div class="border-b-2 border-t-2 border-orange-500 py-1">
-            <p class="bg-orange-500 px-2 text-center text-white font-bold">STUDENT INFORMATION</p>
-        </div>
+
+        <p class="bg-gradient-to-r from-white to-orange-300 px-2 font-semibold text-center w-full my-5">STUDENT INFORMATION</p>
+
 
         <DsInput label="Fullname:" placeholder="Ex, Eviota, Mike John Baguinaon"
         bind:this={$studentState.fullname}
@@ -50,11 +50,11 @@
         
     </div>
 
-    <div class="py-2 flex flex-col gap-2 bg-slate-400 rounded-md p-2">
+    <div class="py-2 flex flex-col gap-2 bg-gradient-to-l from-blue-100 to-slate-500 rounded-md p-4">
         
-        <div class="border-b-2 border-t-2 border-orange-500 py-1">
-            <p class="bg-orange-500 px-2 text-center text-white font-bold">EDUCATION INFORMATION</p>
-        </div>
+
+        <p class="bg-gradient-to-r from-white to-orange-300 px-2 font-semibold text-center w-full my-5">EDUCATION INFORMATION</p>
+
 
         <DsInput label="Primary school name:" placeholder="Ex, Rizal High School, Michigan Institute and Technology"
         bind:this={$studentState.primarySchoolName}

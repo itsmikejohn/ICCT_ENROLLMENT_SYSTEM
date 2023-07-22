@@ -51,8 +51,8 @@
     {#if $studentState.comparison === outerIndex}
 
         <section class="fixed bottom-0 top-0 left-0 right-0 z-10 p-2 sm:p-0 " id="colorMe">
-
-            <div class="border-2 mt-[5vh] sm:max-w-xl mx-auto bg-pagCoreWhite p-2 max-h-[80vh] overflow-y-scroll" transition:scale>
+           
+            <div class="border-2 mt-[5vh] sm:max-w-xl mx-auto bg-gradient-to-t from-pink-500 to-blue-400 p-2 max-h-[80vh] overflow-y-scroll" transition:scale>
                 <section class="p-4">
                     <p class="font-mono font-semibold">{require.name} </p>
                     <p class="text-red-500 font-bold">Upload a scan photos of the following: </p>
@@ -88,5 +88,28 @@
 <style>
     #colorMe{
         background-color: rgba(0, 0, 0, 0.402);
+    }
+
+
+    /* width */
+    ::-webkit-scrollbar {
+    width: 20px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: linear-gradient(blue, white); 
+    border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background:  linear-gradient(white, blue);
     }
 </style>

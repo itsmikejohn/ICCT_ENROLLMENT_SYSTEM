@@ -37,11 +37,11 @@
 </script>
 
 <section class="">
-    <div class="py-2 flex flex-col gap-2 bg-slate-400 rounded-md p-2">
+    <div class="py-2 flex flex-col gap-2 bg-gradient-to-l from-blue-100 to-slate-500 rounded-md p-4">
         
-        <div class="border-b-2 border-t-2 border-orange-500 py-1">
-            <p class="bg-orange-500 px-2 text-center text-white font-bold">UPLOAD REQUIREMENTS</p>
-        </div>
+
+        <p class="bg-gradient-to-r from-white to-orange-300 px-2 font-semibold text-center w-full  my-5">UPLOAD REQUIREMENTS</p>
+
 
         <input 
         id="fileInput"
