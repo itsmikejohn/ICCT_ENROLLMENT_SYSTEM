@@ -54,7 +54,7 @@
 </script>
 
 
-<button class="w-full border-2 border-pagCoreBrown transition-all hover:font-semibold active:scale-95"
+<button class="w-full border-[0.1rem]  transition-all hover:border-[0.13rem] border-black bg-gradient-to-br from-green-100 to-green-200 hover:font-semibold active:scale-95"
 on:click={viewCommentHandler}
 >
     

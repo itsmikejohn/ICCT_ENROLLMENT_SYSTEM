@@ -29,14 +29,14 @@
 </script>
 
 {#if post[$auth.currentUser.uid] === $auth.currentUser.uid}
-    <button class="w-full border-2 border-pagCoreBrown transition-all hover:font-semibold active:scale-95 text-blue-900"
+    <button class="w-full border-[0.1rem]  transition-all hover:border-[0.13rem] border-black bg-gradient-to-br from-green-400 to-green-200 hover:font-semibold active:scale-95 "
     on:click={dislikeHandler}
     >
        {post.likeCount} Liked
     </button>
     
 {:else}
-    <button class="w-full border-2 border-pagCoreBrown transition-all hover:font-semibold active:scale-95"
+    <button class="w-full border-[0.1rem]  transition-all hover:border-[0.13rem] border-black bg-gradient-to-br from-white to-green-200 hover:font-semibold active:scale-95"
     on:click={likesHandler}
     >
     {#if post.likeCount === 1} 

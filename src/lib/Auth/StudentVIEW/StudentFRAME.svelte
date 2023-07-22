@@ -1,7 +1,7 @@
 <script>
     import { staticState } from "$lib";
     import AdmissionFRAME from "../StaticVIEW/AdmissionFRAME/AdmissionFRAME.svelte";
-
+	import GuidesFRAME from "../StaticVIEW/GuidesFRAME/GuidesFRAME.svelte";
     import InteractFRAME from "./InteractFRAME/InteractFRAME.svelte";
 	import StatusFRAME from "./StatusFRAME/StatusFRAME.svelte";
 	
@@ -14,5 +14,7 @@
         <InteractFRAME />
     {:else if $staticState.activeItem === "Status"}
         <StatusFRAME/>
+    {:else if $staticState.activeItem === "Guides"}
+        <GuidesFRAME />
     {/if}
 </main>
