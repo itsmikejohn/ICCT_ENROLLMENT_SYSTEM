@@ -51,9 +51,9 @@
             <button class="flex flex-col gap-1 px-2 py-4 transition-all "
             on:click={showMenu}
             >
-                <div class="w-8 border-b-4 border-pagCoreWhite rotate-45 absolute"></div>
+                <div class="w-8 border-b-4 border-white rotate-45 absolute"></div>
             
-                <div class="w-8 border-b-4 border-pagCoreWhite rotate-[-45deg]"></div>
+                <div class="w-8 border-b-4 border-white rotate-[-45deg]"></div>
             </button>
         </div>
 

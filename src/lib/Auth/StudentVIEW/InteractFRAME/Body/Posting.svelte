@@ -42,7 +42,7 @@
 
 </script>
 
-<main class="border-2  sm:max-w-lg mx-auto mt-[10vh] bg-pagCoreWhite p-2" transition:scale>
+<main class=" sm:max-w-lg mx-auto mt-[10vh] p-2 border-[0.1rem] border-black rounded-lg bg-gradient-to-r from-white to-blue-100" transition:scale>
     <section class="flex items-center gap-2 p-2">
         <img src={$auth.currentUser?.photoURL} alt="loading" class="w-14 rounded-full border-2  bg-slate-200" />
         <section>
@@ -51,7 +51,7 @@
         </section>
     </section>
 
-    <textarea class="w-full focus:outline-none p-2" 
+    <textarea class="w-full focus:outline-none p-2 border-[0.1rem] border-black" 
     placeholder={"Say something, " + $auth.currentUser?.displayName}
     on:keyup={detectKey} 
     bind:value={dsComp.postValue}/>

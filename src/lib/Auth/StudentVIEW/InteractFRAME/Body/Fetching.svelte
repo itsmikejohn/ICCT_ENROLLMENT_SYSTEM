@@ -51,7 +51,7 @@
 </script>
 
 {#each $studentState.showStudentPost as post, outerIndex}
-    <main class="p-2 border-2 mt-2 rounded-lg bg-[#e7e1da] border-pagCoreBrown break-words">
+    <main class="p-2 border-[0.1rem] border-black mt-2 rounded-lg bg-gradient-to-r {$auth.currentUser?.uid === post.ownerUID ? "from-blue-100 to-white" : "from-white to-blue-100"} break-words">
         <section class="flex items-center gap-2 ">
             <img src={post.photoURL} alt="loading" class="w-14  rounded-full bg-pagCoreWhite p-1" />
 

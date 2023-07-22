@@ -36,12 +36,12 @@
 
 
         
-    <div class="border-b-2 border-t-2 border-orange-500 py-1 mt-5">
-        <p class="bg-orange-500 text-center text-white font-bold">Student Information</p>
-    </div>
+
+    <p class="bg-gradient-to-l from-white to-orange-300 w-full px-2 font-semibold text-center">Student Information</p>
+
 
     {#if Object.keys($studentState.showFormReq).length > 0}
-        <section class="mt-2 p-2 bg-slate-800">
+        <section class="mt-2 bg-gradient-to-r from-white to-pink-800 p-4">
             <FetchingInfo />
         </section>
     {:else}

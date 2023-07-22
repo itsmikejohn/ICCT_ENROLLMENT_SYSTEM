@@ -93,19 +93,13 @@
 
     /* width */
     ::-webkit-scrollbar {
-    width: 20px;
+    width: 7px;
     }
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-    }
-    
     /* Handle */
     ::-webkit-scrollbar-thumb {
     background: linear-gradient(blue, white); 
-    border-radius: 10px;
+
     }
 
     /* Handle on hover */
