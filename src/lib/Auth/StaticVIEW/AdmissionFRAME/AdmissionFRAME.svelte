@@ -14,7 +14,7 @@
 <main in:scale>
     <main class="flex ">
         {#each array_data as selection }
-            <button class="px-2 py-1 bg-pagCoreBrown text-pagCoreWhite w-full transition-all hover:font-semibold hover:text-black hover:bg-[#bfaf9c]"
+            <button class="px-2 py-1  bg-gradient-to-l from-blue-600 to-blue-500  w-full transition-all hover:font-semibold hover:text-black hover:bg-[#bfaf9c] shadow-lg shadow-black"
             class:active={activeItem === selection}
             on:click={() => dataCatch(selection)}
             >{selection}</button>
@@ -34,7 +34,8 @@
 
 <style>
     .active{
-        background-color: #bfaf9c;
-        color: black
+        background-color: #71440c;
+        color: white;
+        font-weight: bold;
     }
 </style>

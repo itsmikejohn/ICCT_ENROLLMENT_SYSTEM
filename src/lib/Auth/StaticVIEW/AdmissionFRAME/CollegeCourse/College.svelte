@@ -1,13 +1,16 @@
 <script>
     import { staticState } from "$lib";
+	import { onMount } from "svelte";
 	import { fly } from "svelte/transition";
+
+   
 </script>
 
 <main class="leading-8" in:fly={{x:-300, duration:500}}>
     {#each $staticState.cc as course, index}
 
-        <section class="border-b-2 border-t-2 border-[#bfaf9c] py-1 mt-2" >
-            <p class="bg-[#bfaf9c] text-center font-mono font-semibold">{course.name}</p>
+        <section class="py-1 my-4" >
+            <p class="bg-gradient-to-r from-white to-orange-300 px-2 font-semibold text-center w-full text-black shadow-lg shadow-black">{course.name}</p>
         </section>
 
         {#each course.offers as offers}
