@@ -25,12 +25,12 @@
 
             <div class="flex flex-col leading-10 p-5">
                 
-                <a href="https://www.facebook.com/mike.eviota" target="_blank" class="underline text-blue-600 italic max-w-fit">Mike Developer and Designer</a>
-                <a href="https://www.facebook.com/juwiiireyn" target="_blank" class="underline text-blue-600 italic max-w-fit">Jowey Contributor</a>
-                <a href="https://www.facebook.com/johnmichael.dator.1" target="_blank" class="underline text-blue-600 italic max-w-fit">Dator Contributor</a>
-                <a href="https://www.facebook.com/stigband.rommel" target="_blank" class="underline text-blue-600 italic max-w-fit">Rommel Contributor</a>
-                <a href="https://www.facebook.com/profile.php?id=100019318960530" target="_blank" class="underline text-blue-600 italic max-w-fit">Brian Stephen Contributor</a>
-                <a href="https://www.facebook.com/jojelito.sispon.9" target="_blank" class="underline text-blue-600 italic max-w-fit">Jholitz Dt Contributor</a>
+                <a href="https://www.facebook.com/mike.eviota" target="_blank" class="underline text-blue-600 italic max-w-fit transition-all hover:scale-105 active:scale-95 hover:font-bold">Mike Developer and Designer</a>
+                <a href="https://www.facebook.com/juwiiireyn" target="_blank" class="underline text-blue-600 italic max-w-fit transition-all hover:scale-105 active:scale-95 hover:font-bold">Jowey Contributor</a>
+                <a href="https://www.facebook.com/johnmichael.dator.1" target="_blank" class="underline text-blue-600 italic max-w-fit transition-all hover:scale-105 active:scale-95 hover:font-bold">Dator Contributor</a>
+                <a href="https://www.facebook.com/stigband.rommel" target="_blank" class="underline text-blue-600 italic max-w-fit transition-all hover:scale-105 active:scale-95 hover:font-bold">Rommel Contributor</a>
+                <a href="https://www.facebook.com/profile.php?id=100019318960530" target="_blank" class="underline text-blue-600 italic max-w-fit transition-all hover:scale-105 active:scale-95 hover:font-bold">Brian Stephen Contributor</a>
+                <a href="https://www.facebook.com/jojelito.sispon.9" target="_blank" class="underline text-blue-600 italic max-w-fit transition-all hover:scale-105 active:scale-95 hover:font-bold">Jholitz Dt Contributor</a>
             </div>
         </div>
 
