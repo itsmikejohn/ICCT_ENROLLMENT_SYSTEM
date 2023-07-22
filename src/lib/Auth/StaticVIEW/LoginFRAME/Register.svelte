@@ -18,12 +18,12 @@
         
     </section>
 
-    <section class="p-5 border-[0.1rem] border-[#292929f0] rounded-md sm:w-[400px] mx-auto flex flex-col gap-2 bg-gradient-to-r from-blue-500 to-white shadow-lg shadow-black" in:fly={{y:300, duration:1000}}>
+    <section class="p-5 border-[0.1rem] border-[#292929f0] rounded-md sm:w-[400px] mx-auto flex flex-col gap-2 bg-gradient-to-r from-blue-500 to-white shadow-lg shadow-black" in:fly={{y:100, duration:600}}>
         <!--Register functions inside here-->
         <RegisterLogics />
     </section>
 
-    <section class="p-2 border-[0.1rem] border-[#292929f0] sm:w-[400px] mx-auto flex gap-2 bg-gradient-to-l from-blue-500 to-white mt-10 shadow-lg shadow-black" in:fly={{x:300, duration:500}}>
+    <section class="p-2 border-[0.1rem] border-[#292929f0] sm:w-[400px] mx-auto flex gap-2 bg-gradient-to-l from-blue-500 to-white mt-10 shadow-lg shadow-black" in:fly={{x:100, duration:500}}>
         <p>Have account?</p>
         <button class="underline text-pagCoreBlue transition-all hover:font-semibold active:scale-95"
         on:click={() => $staticState.showRegister = false}

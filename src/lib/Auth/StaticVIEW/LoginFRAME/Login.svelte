@@ -19,13 +19,13 @@
         
     </section>
 
-    <section class="p-5   border-[0.1rem] border-[#292929f0] sm:w-[400px] mx-auto flex flex-col gap-2  bg-gradient-to-r from-blue-500 to-white rounded-md shadow-lg shadow-black" in:fly={{y:300, duration:1000}}>
+    <section class="p-5   border-[0.1rem] border-[#292929f0] sm:w-[400px] mx-auto flex flex-col gap-2  bg-gradient-to-r from-blue-500 to-white rounded-md shadow-lg shadow-black" in:fly={{y:100, duration:600}}>
         
         <!--Login logics all happened here inside-->
         <LoginLogics />
     </section>
 
-    <section class="p-2  border-[0.1rem] border-[#292929f0] mt-10 sm:w-[400px] mx-auto flex gap-2 bg-gradient-to-l from-blue-500 to-white shadow-lg shadow-black" in:fly={{x:300, duration:500}}>
+    <section class="p-2  border-[0.1rem] border-[#292929f0] mt-10 sm:w-[400px] mx-auto flex gap-2 bg-gradient-to-l from-blue-500 to-white shadow-lg shadow-black" in:fly={{x:100, duration:500}}>
         <p>Don't have account?</p>
         <button class="underline text-pagCoreBlue transition-all hover:font-semibold active:scale-95"
         on:click={() => $staticState.showRegister = true}
