@@ -3,12 +3,12 @@
 
 </script>
 
-<footer class="bg-[#22180d] text-white p-2 mt-10">
+<footer class="bg-gradient-to-b  sm:bg-gradient-to-r from-[#22180d] to-yellow-900 text-white p-2 mt-10">
     <div class="flex flex-col sm:flex-row gap-2">
         <div class="flex flex-col gap-2  p-5 w-full">
-            <div class="border-t-2 border-[#633200] py-1 border-b-2 ">
-                <p class="font-serif font-bold text-center bg-[#633200]">SYSTEM INFORMATION</p>
-            </div>
+
+            <p class="bg-gradient-to-r from-white to-orange-300 px-2 font-semibold text-center w-full text-black">SYSTEM INFORMATION</p>
+
 
             <p class="leading-7">
                 Our system is designed specifically for enrollment, with a simple and intuitive interface that makes it easy to navigate and use. With our system, you can quickly and easily enroll in courses, access important information related to your enrollment status. and access other important resources related to your enrollment.
@@ -20,9 +20,9 @@
         </div>
     
         <div class="w-full p-5">
-            <div class="border-t-2 border-[#633200] py-1 border-b-2 ">
-                <p class="font-serif font-bold text-center bg-[#633200]">TALK WITH US</p>
-            </div>
+        
+                <p class="bg-gradient-to-r from-white to-orange-300 px-2 font-semibold text-center w-full text-black">TALK WITH US</p>
+
             <div class="flex flex-col leading-10 p-5">
                 
                 <a href="https://www.facebook.com/mike.eviota" target="_blank" class="underline text-blue-600 italic max-w-fit">Mike Developer and Designer</a>
