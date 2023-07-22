@@ -33,7 +33,7 @@
 
             }else
             {
-                $staticState.activeItem = "Admission";
+                $staticState.activeItem = "Home";
                 $staticState.defaultNav = $staticState.staticNav;
                 $staticState.hadAdmin = false;
                 $staticState.hadStudent = false;
