@@ -8,7 +8,7 @@
 
 </script>
 
-<main in:scale>
+<main class="p-5" in:scale>
     {#if $staticState.showRegister}
         <Register />
     {:else if $staticState.showResetPass}

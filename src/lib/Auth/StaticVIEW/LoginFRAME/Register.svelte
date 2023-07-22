@@ -18,7 +18,7 @@
         
     </section>
 
-    <section class="p-2 border-[0.1rem] border-[#292929f0] rounded-md sm:p-5 sm:w-[400px] mx-auto flex flex-col gap-2 bg-gradient-to-r from-blue-500 to-white shadow-lg shadow-black" in:fly={{y:300, duration:1000}}>
+    <section class="p-5 border-[0.1rem] border-[#292929f0] rounded-md sm:w-[400px] mx-auto flex flex-col gap-2 bg-gradient-to-r from-blue-500 to-white shadow-lg shadow-black" in:fly={{y:300, duration:1000}}>
         <!--Register functions inside here-->
         <RegisterLogics />
     </section>
