@@ -3,7 +3,7 @@
 
 </script>
 
-<footer class="bg-gradient-to-b  sm:bg-gradient-to-r from-[#22180d] to-yellow-900 text-white p-2 mt-10">
+<footer class="bg-gradient-to-b  sm:bg-gradient-to-r from-[#22180d] to-yellow-900 text-white p-2 mt-10 text-xs sm:text-base ">
     <div class="flex flex-col sm:flex-row gap-2">
         <div class="flex flex-col gap-2  p-5 w-full">
 
