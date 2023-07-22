@@ -12,7 +12,7 @@
                 <p>From a tiny portion of the tuition to full help for tuition and books, financial aid is available.</p>
         </section>
 
-        <p class="px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 max-w-fit font-semibold mt-5">President's List Scholarship Award</p>
+        <p class="w-full sm:max-w-fit px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 font-semibold mt-5">President's List Scholarship Award</p>
         <section class="flex flex-col gap-1 mt-2 ">
                 <p>
                     The President's List Scholarship Award is available to students enrolled at ICCT Colleges. Students under this scholarship shall represent 10% of the total enrollment of the previous trimester. This award shall be based on the following:
@@ -46,32 +46,32 @@
             </ul>
         </section>
 
-        <p class="px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 max-w-fit font-semibold mt-5">Student Assistantship</p>
+        <p class="w-full sm:max-w-fit px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 font-semibold mt-5">Student Assistantship</p>
         <p class="mt-2">
             ICCT Colleges employs a limited number of responsible students who serve as assistants in some departments of the ICCT Colleges requiring their services. Students may apply but selection depends on their academic performance, ability to do the job and sufficiency of time for work. Payment for services is based on the number of hours rendered. A student who qualified for the Student Assistantship program shall enjoy the tuition-fee discount under the WAYS program.
         </p>
 
-        <p class="px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 max-w-fit font-semibold mt-5">Siblings Discount</p>
+        <p class="w-full sm:max-w-fit px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 font-semibold mt-5">Siblings Discount</p>
         <p class="mt-2">
             As a form of incentive, ICCT Colleges offers the following discount: when two or more brothers/sisters enroll during the same term, the second brother/sister shall be granted a 10% discount, the third a 20% discount, the fourth 30% discount, and the succeeding brothers/sisters, a 50% discount.
         </p>
 
-        <p class="px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 max-w-fit font-semibold mt-5">Government Employees and Dependents Discounts</p>
+        <p class="w-full sm:max-w-fit px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 font-semibold mt-5">Government Employees and Dependents Discounts</p>
         <p class="mt-2">
             ICCT Colleges recognizes the hardworking government employees, thus grants a 50% percent discount on the tuition fee of qualified government employees and dependents. However, these discounts are subject for the approval of the President upon submission of the requirements through the Office of Student Affairs.
         </p>
 
-        <p class="px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 max-w-fit font-semibold mt-5">Work As You Study "WAYS" Program</p>
+        <p class="w-full sm:max-w-fit px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 font-semibold mt-5">Work As You Study "WAYS" Program</p>
         <p class="mt-2">
             A student may apply as working student via the WAYS program. Students qualified for the program shall be made to pay 100 pesos per unit on the tuition fee as oppose to the regular 130 pesos per unit fee. As another assistance, qualified applicants may be given schedule to work in any division of William and Co. Phils, Inc. or in any of its sister companies or establishment partners.
         </p>
 
-        <p class="px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 max-w-fit font-semibold mt-5">MR & MS ICCT SCHOLARSHIP Grant</p>
+        <p class="w-full sm:max-w-fit px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 font-semibold mt-5">MR & MS ICCT SCHOLARSHIP Grant</p>
         <p class="mt-2">
             A scholarship grant given to the winners of the Search for Mr. & Ms. ICCT. The grant ranges from a FULL SCHOLARSHIP to tuition fee discounts to the deserving winners of the pageant.
         </p>
 
-        <p class="px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 max-w-fit font-semibold mt-5">DR. CONSUELO L. CO "DCLC" SCHOLARSHIP Program</p>
+        <p class="w-full sm:max-w-fit px-2 py-1 bg-gradient-to-tl from-green-500 to-green-200 font-semibold mt-5">DR. CONSUELO L. CO "DCLC" SCHOLARSHIP Program</p>
         <p class="mt-2">
             An institutional scholarship program offered to qualified and deserving high school graduates with Valedictorian, Salutatorian and within the Top 5 graduates status in their High School. Students who will qualify for this scholarship program shall enjoy Full Scholarship Grant and a trimester/semester stipend/allowance respectively.
         </p>
