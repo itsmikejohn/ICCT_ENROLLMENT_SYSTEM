@@ -10,7 +10,7 @@
 
 <main class="" in:scale>
 
-    <section class="sm:w-[400px] mx-auto mb-2 flex flex-col gap-2 justify-center items-center" in:fly={{y:-300, duration:1000}}>
+    <section class="sm:w-[400px] mx-auto mb-2 flex flex-col gap-2 justify-center items-center" >
         <img src={ICCTicon} alt="loadin" class="w-40" />
 
   

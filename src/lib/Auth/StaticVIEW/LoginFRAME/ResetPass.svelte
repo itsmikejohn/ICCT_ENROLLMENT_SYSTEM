@@ -1,8 +1,6 @@
 <script>
     import { staticState } from "$lib";
 
-	import DsButton from "$lib/GenCom/DsButton.svelte";
-    import DsInput from "$lib/GenCom/DsInput.svelte";
     import ICCTicon from "$lib/Images/SVG/ICCTicon.webp";
 	import { fly, scale } from "svelte/transition";
 	import ResetLogics from "./ResetLogics/ResetLogics.svelte";
@@ -12,7 +10,7 @@
 
 <main class="" in:scale>
 
-    <section class="sm:w-[400px] mx-auto mb-2 flex flex-col gap-2 justify-center items-center" in:fly={{y:-300, duration:1000}}>
+    <section class="sm:w-[400px] mx-auto mb-2 flex flex-col gap-2 justify-center items-center" >
         <img src={ICCTicon} alt="loadin" class="w-40" />
 
 
