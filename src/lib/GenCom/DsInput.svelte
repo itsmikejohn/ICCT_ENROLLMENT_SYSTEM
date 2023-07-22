@@ -10,21 +10,21 @@
 {#if type === "text"}
     <section>
         <p class="py-1 font-semibold">{label}</p>
-        <input type="text"  {placeholder} class="w-full px-2 py-1 focus:outline-none font-mono" 
+        <input type="text"  {placeholder} class="w-full px-2 py-1 focus:outline-none font-mono  border-[0.1rem] border-[#292929f0] " 
         bind:value={bindthis}
         />
     </section>
 {:else if type === "email"}
     <section>
         <p class="py-1 font-semibold">{label}</p>
-        <input type="email"  {placeholder} class="w-full px-2 py-1 focus:outline-none font-mono" 
+        <input type="email"  {placeholder} class="w-full px-2 py-1 focus:outline-none font-mono  border-[0.1rem] border-[#292929f0]" 
         bind:value={bindthis}
         />
     </section>
 {:else if type === "password"}
     <section>
         <p class="py-1 font-semibold">{label}</p>
-        <input type="password"  {placeholder} class="w-full px-2 py-1 focus:outline-none font-mono" 
+        <input type="password"  {placeholder} class="w-full px-2 py-1 focus:outline-none font-mono border-[0.1rem] border-[#292929f0]" 
         bind:value={bindthis}
         />
     </section>

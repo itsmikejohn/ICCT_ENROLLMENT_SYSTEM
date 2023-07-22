@@ -21,7 +21,7 @@
 <!--@component 
     This component takes logic as boolean if you want fixed title, takes logic_title as part of logic becoming true, takes title as dynamic tyle, takes array data as selection value-->
 
-<button class="flex items-center px-2 py-1 w-full text-left bg-white font-mono"
+<button class="flex items-center px-2 py-1 w-full text-left bg-white font-mono border-[0.1rem] border-[#292929f0]"
 on:click={showMenu}
 >   
     {#if logic}

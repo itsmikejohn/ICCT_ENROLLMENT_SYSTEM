@@ -9,8 +9,6 @@
 	import Footer from "$lib/GenCom/Footer.svelte";
 	import { onMount } from "svelte";
 
-    
-	
 
     onMount(() =>
     {

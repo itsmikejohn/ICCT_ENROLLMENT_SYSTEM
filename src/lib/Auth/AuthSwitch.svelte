@@ -8,7 +8,7 @@
 
 </script>
 
-<main class="mt-20 sm:max-w-xl mx-auto p-2 sm:p-0 min-h-screen">
+<main class="mt-20 sm:max-w-xl mx-auto p-2 sm:p-0 min-h-screen text-xs sm:text-base">
     {#if $staticState.hadAdmin}
         <AdminFRAME />
     {:else if $staticState.hadStudent}
