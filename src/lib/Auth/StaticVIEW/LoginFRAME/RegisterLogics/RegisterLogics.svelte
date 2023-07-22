@@ -9,7 +9,7 @@
     /** Database calls */
     import { auth, db } from "$lib";
     import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-    import { addDoc, updateDoc, setDoc, doc, collection, serverTimestamp, increment } from "firebase/firestore";
+    import {  setDoc, doc, collection, serverTimestamp, increment } from "firebase/firestore";
 
     /** @type {any} it is obvs types just lazy so i put any*/
     const dsComp = {

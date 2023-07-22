@@ -80,7 +80,7 @@
 
 <style>
     .active{
-        background-color: #dabc94;
+        background: linear-gradient(#dabc94, white);
         color: black;
     }
 </style>
