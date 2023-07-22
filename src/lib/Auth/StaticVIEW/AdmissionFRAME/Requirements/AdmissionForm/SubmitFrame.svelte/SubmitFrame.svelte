@@ -123,8 +123,8 @@
 
 {#if dsComp.showError}
     <section class="fixed bottom-0 top-0 left-0 right-0  z-10 p-2 sm:p-0">
-        <div class="sm:max-w-[400px] mx-auto p-2 mt-[10vh] bg-slate-400 border-2 border-pagCoreBrown" transition:fly={{y:-300, duration:500}}>
-            <p class="text-center ">You can't submit with unfinish fields. Make sure to answer fields correclty no troll!!</p>
+        <div class="sm:max-w-fit  border-[0.1rem] border-[#292929f0] mx-auto mt-[10vh] p-4 flex flex-col gap-4 bg-gradient-to-r from-[#22180d] to-yellow-900 rounded-lg " transition:fly={{y:-300, duration:500}}>
+            <p class="text-center text-red-500 font-bold">You can't submit with unfinish fields. Make sure to answer fields correclty no troll!!</p>
             <DsButton title="Ok" on:click={() => dsComp.showError = false}/>
         </div>
 
@@ -134,6 +134,7 @@
 
 <DsButton 
 title="Submit"
+security={dsComp.loader}
 logic={dsComp.loader}
 logic_title="Sending."
 on:click={handleSubmit}

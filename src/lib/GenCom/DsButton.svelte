@@ -3,6 +3,7 @@
     export let logic = false;
     export let logic_title = "loading";
     export let color = "bg-pagCoreBlue";
+    export let security = false;
 
 </script>
 
@@ -11,7 +12,7 @@ This button made accepts title - button title, logic - loader boolean, logic_tit
 
 -->
 
-<button class="w-full px-2 py-1 {color} text-white transition-all hover:opacity-60 active:scale-95"
+<button class="w-full px-2 py-1 {color} text-white transition-all hover:opacity-60 active:scale-95" disabled={security}
 on:click
 >
     {#if logic}
