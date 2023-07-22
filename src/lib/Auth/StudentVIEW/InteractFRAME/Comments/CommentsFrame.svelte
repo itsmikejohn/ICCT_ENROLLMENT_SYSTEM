@@ -71,7 +71,7 @@ on:click={viewCommentHandler}
 {#if dsComp.commentComparison === outerIndex}
     <section class="fixed bottom-0 top-0 left-0 right-0 z-10 p-2 sm:p-0 " id="colorMe">
         
-        <div class="border-2 mt-[5vh] sm:max-w-xl mx-auto bg-[#e7e1da] p-2 max-h-[80vh] overflow-y-scroll" transition:scale>
+        <div class=" mt-[5vh] sm:max-w-xl mx-auto bg-[#e7e1da]  max-h-[80vh] overflow-y-scroll p-2 border-[0.1rem] border-black bg-gradient-to-r {$auth.currentUser?.uid === post.ownerUID ? "from-blue-100 to-white" : "from-white to-blue-100"} break-words" transition:scale>
 
             <button class="absolute bg-red-500 -ml-2 -mt-10 px-2 text-white transition-all hover:font-semibold active:scale-95"
             on:click={() => dsComp.commentComparison = 0.1}
@@ -94,7 +94,7 @@ on:click={viewCommentHandler}
             <!--COMMENT RENDER-->
             {#each $studentState.showStudentComments as comments}
                 {#if post.originUID === comments.targetUID}
-                    <section class="bg-slate-100 mt-2">
+                    <section class="p-2 border-[0.1rem] border-black mt-2 rounded-lg bg-gradient-to-r {$auth.currentUser?.uid === post.ownerUID ? "from-blue-100 to-white" : "from-white to-blue-100"} break-words">
                         <section class="flex items-center gap-2 p-2">
                             <div class="w-full">
                                 <img src={comments.photoURL} alt="loading" class="w-14 rounded-full border-2  bg-slate-200" />
@@ -129,5 +129,21 @@ on:click={viewCommentHandler}
 <style>
     #colorMe{
         background-color: rgba(0, 0, 0, 0.402);
+    }
+
+     /* width */
+     ::-webkit-scrollbar {
+    width: 7px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: linear-gradient(blue, white); 
+
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background:  linear-gradient(white, blue);
     }
 </style>
