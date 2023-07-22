@@ -37,8 +37,11 @@
 <main>
     {#if dsComp.showLoginWarning}
         <section class="fixed left-0 right-0 bottom-0 top-0 z-10  p-2 sm:p-0">
-            <div class="sm:max-w-xl border-2 border-pagCoreBrown mx-auto mt-[10vh] p-2 flex flex-col gap-4 bg-pagCoreWhite" transition:scale>
-                <p class="text-center text-red-500 font-semibold">You have to login to submit form.</p>
+            <div class="sm:max-w-fit  border-[0.1rem] border-[#292929f0] mx-auto mt-[10vh] p-4 flex flex-col gap-4 bg-gradient-to-r from-[#22180d] to-yellow-900 rounded-lg " transition:scale>
+                <section class="flex items-center gap-2">
+                    <p class="text-3xl font-extrabold p-2 bg-red-500 max-w-fit rounded-full px-5 text-white">!</p>
+                    <p class="text-center text-red-500 font-semibold">You have to login to submit form.</p>
+                </section>
                 <DsButton title="Ok" on:click={() => dsComp.showLoginWarning = false}/>
             </div>
         </section>

@@ -37,7 +37,7 @@ export const staticState = writable({
     hadAdmin: false,
     activeItem: "",
 
-    staticNav: ["Admission", "Login"],
+    staticNav: ["Admission", "Home", "Guides","Login"],
     adminNav: ["Panel", "DashBoard", "Interact"],
     studentNav: ["Admission", "Status", "Interact"],
     defaultNav: ["youtube/@mikeSharesCode"],
