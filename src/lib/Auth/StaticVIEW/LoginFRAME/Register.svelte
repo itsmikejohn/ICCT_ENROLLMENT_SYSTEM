@@ -23,7 +23,7 @@
         <RegisterLogics />
     </section>
 
-    <section class="p-2 border-[0.1rem] border-[#292929f0] sm:w-[400px] mx-auto flex gap-2 bg-gradient-to-l from-blue-500 to-white mt-10 shadow-lg shadow-black" in:fly={{x:100, duration:500}}>
+    <section class="p-2 border-[0.1rem] border-[#292929f0] sm:w-[400px] mx-auto flex gap-2 bg-gradient-to-l from-blue-500 to-white mt-10 shadow-lg shadow-black rounded-md" in:fly={{x:100, duration:500}}>
         <p>Have account?</p>
         <button class="underline text-pagCoreBlue transition-all hover:font-semibold active:scale-95"
         on:click={() => $staticState.showRegister = false}
