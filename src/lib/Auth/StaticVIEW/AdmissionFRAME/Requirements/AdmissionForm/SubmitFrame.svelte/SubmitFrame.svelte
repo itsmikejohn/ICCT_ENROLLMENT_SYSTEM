@@ -19,14 +19,13 @@
     }
     
     /** firebase submit form function 
-     * @param {string} course @param {string} fullname @param {string} presentAddress @param {string} religion
+     * @param {string} course @param {string} presentAddress @param {string} religion
      * @param {string} civilStatus @param {string} mobileNumber @param {string} dateOfbirth @param {string} fathersName @param {string} mothersName
      * @param {string} primarySchoolName @param {string} primarySchoolAddress @param {string} primaryGraduated @param {string} secondarySchoolName 
      * @param {string} secondarySchoolAddress @param {string} secondaryGraduated
     */
     const firebaseSubmitForm = (
-        course, 
-        fullname, presentAddress, 
+        course, presentAddress, 
         religion, civilStatus, mobileNumber, 
         dateOfbirth, fathersName, mothersName, 
         primarySchoolName, primarySchoolAddress, primaryGraduated,
@@ -35,10 +34,12 @@
         dsComp.loader = true;
         setDoc(doc(collection($db, "submittedForms"), $auth.currentUser?.uid ), {
             createdAt: serverTimestamp(),
-            isAccepted: false,
+            email: $auth.currentUser?.email,
+            studentUID: $auth.currentUser?.uid,
+            photoURL: $auth.currentUser?.photoURL,
             formType: require.name,
             course: course,
-            fullname: fullname,
+            fullname: $auth.currentUser?.displayName,
             presentAddress: presentAddress,
             religion: religion,
             civilStatus: civilStatus,
@@ -52,6 +53,8 @@
             secondarySchoolName: secondarySchoolName,
             secondarySchoolAddress: secondarySchoolAddress,
             secondaryGraduated: secondaryGraduated,
+            isAccepted: false,
+            acceptedMsg: "",
         }, {merge:true})
         .then(voidResp => 
         {
@@ -72,7 +75,6 @@
     const handleSubmit = () =>
     {
         const course = $studentState.course;
-        const fullname = $studentState.fullname.bindthis;
         const presentAddress = $studentState.presentAddress.bindthis;
         const religion = $studentState.religion.bindthis;
         const civilStatus = $studentState.civilStatus.bindthis;
@@ -89,7 +91,6 @@
 
        if(
             course.trim().length > 16 && 
-            fullname.trim().length > 4 &&
             presentAddress.trim().length > 4 && 
             religion.trim().length > 3 && 
             civilStatus.trim().length > 3 &&
@@ -105,8 +106,7 @@
             secondaryGraduated.trim().length > 3
        )
        {
-            firebaseSubmitForm(course, 
-            fullname, presentAddress, 
+            firebaseSubmitForm(course, presentAddress, 
             religion, civilStatus, mobileNumber, 
             dateOfbirth, fathersName, mothersName, 
             primarySchoolName, primarySchoolAddress, primaryGraduated,

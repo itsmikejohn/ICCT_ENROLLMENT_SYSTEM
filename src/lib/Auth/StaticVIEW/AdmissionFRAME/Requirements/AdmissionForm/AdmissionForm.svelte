@@ -22,10 +22,6 @@
 
         <p class="bg-gradient-to-r from-white to-orange-300 px-2 font-semibold text-center w-full my-5">STUDENT INFORMATION</p>
 
-
-        <DsInput label="Fullname:" placeholder="Ex, Eviota, Mike John Baguinaon"
-        bind:this={$studentState.fullname}
-        />
         <DsInput label="Present address:" placeholder="San Andres, Cavite, Rizal"
         bind:this={$studentState.presentAddress}
         />

@@ -16,9 +16,10 @@
     import DsButton from "$lib/GenCom/DsButton.svelte";
 </script>
 
-<DsButton color="bg-red-500" title="Delete form" 
-on:click={deleteFormHandler}
-logic={dsComp.loader}
-logic_title="Deleting."
-
-/>
+{#if !$studentState.showFormReq.isAccepted}
+    <DsButton color="from-red-500 to-red-700" title="Delete form" 
+    on:click={deleteFormHandler}
+    logic={dsComp.loader}
+    logic_title="Deleting."
+    />
+{/if}

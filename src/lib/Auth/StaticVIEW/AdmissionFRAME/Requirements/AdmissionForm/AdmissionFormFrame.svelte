@@ -46,7 +46,7 @@
             </div>
         </section>
     {/if}
-    <DsButton color="bg-green-500" title="Submit form" on:click={viewSubmitForm}/>
+    <DsButton color="from-green-400 to-green-500" title="Submit form" on:click={viewSubmitForm}/>
     <!--Comparison to show specific form to its respected index-->
     {#if $studentState.comparison === outerIndex}
 

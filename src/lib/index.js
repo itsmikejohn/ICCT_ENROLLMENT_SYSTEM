@@ -29,6 +29,10 @@ export const adminState = writable({
     /** panel state */
     /** @type {string[]} */
     submittedForms: [],
+
+    panelComparison: 0.1,
+    showAccept: false,
+    showDetails: false,
 })
 
 export const staticState = writable({

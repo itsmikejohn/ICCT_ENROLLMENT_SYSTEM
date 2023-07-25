@@ -40,7 +40,7 @@
 
     <section>
         {#if $auth.currentUser}
-            <DsButton color="bg-red-500" title="Logout" on:click={logoutHandler} />
+            <DsButton color="from-red-500 to-red-700" title="Logout" on:click={logoutHandler} />
         {/if}
     </section>
 </main>
