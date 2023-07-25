@@ -18,7 +18,7 @@
             {
                 if(userCredResp.uid === $adminKey)
                 {
-                    $staticState.activeItem = "DashBoard";
+                    $staticState.activeItem = "Patch Notes";
                     $staticState.defaultNav = $staticState.adminNav;
                     $staticState.hadAdmin = true;
                     $staticState.hadStudent = false;

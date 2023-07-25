@@ -12,6 +12,7 @@
 	import AcceptLogis from "./AcceptLogis.svelte";
 	import DetailsLogics from "./DetailsLogics.svelte";
 	import SearchLogics from "./SearchLogics.svelte";
+	import { scale } from "svelte/transition";
 
     
     onSnapshot(query(collection($db, "submittedForms"), orderBy("createdAt", "asc")), snapsResp =>
@@ -51,7 +52,9 @@
 
 </script>
 
-<main class="min-h-[50vh] border-[0.1rem] border-black bg-gradient-to-bl from-[#ffc400] to-[#5b16475e] p-2 shadow-lg shadow-black">
+<main class="min-h-[50vh] border-[0.1rem] border-black bg-gradient-to-bl from-[#ffc400] to-[#5b16475e] p-2 shadow-lg shadow-black"
+in:scale
+>
     <p class="text-center p-2 border-[0.1rem] bg-gradient-to-r from-black to-blue-400 text-white font-bold">Submitted Forms</p>
 
     <SearchLogics />
