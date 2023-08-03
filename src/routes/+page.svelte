@@ -9,7 +9,7 @@
 	import Footer from "$lib/GenCom/Footer.svelte";
 	import { onMount } from "svelte";
 
-
+    console.log("created by www.youtube.com/@mikeSharesCode")
     onMount(() =>
     {
         onAuthStateChanged($auth, userCredResp =>
